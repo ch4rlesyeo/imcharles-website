@@ -17,6 +17,7 @@ const eslintConfig = [
   {
     rules: {
       'prettier/prettier': 'warn',
+      'no-console': 'warn',
       '@typescript-eslint/naming-convention': [
         'error',
         {
@@ -28,6 +29,11 @@ const eslintConfig = [
           selector: 'typeAlias',
           format: ['PascalCase'],
           prefix: ['T']
+        },
+        {
+          selector: 'enum',
+          format: ['PascalCase'],
+          prefix: ['E']
         }
       ],
       'import/order': [

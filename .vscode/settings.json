@@ -22,7 +22,7 @@
   ],
   "prettier.requireConfig": true,
   "prettier.documentSelectors": ["**/*.{js,jsx,ts,tsx,json,css,md}"],
-  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "problems.showCurrentInStatus": true,
   "css.validate": false,
   "less.validate": false,

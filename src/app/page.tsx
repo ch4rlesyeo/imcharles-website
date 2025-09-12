@@ -1,7 +1,5 @@
+import HomePage from '@/pages/home';
+
 export default function Home() {
-  return (
-    <div>
-      <span className="text-sm">{`I'm Charles`}</span>
-    </div>
-  );
+  return <HomePage />;
 }

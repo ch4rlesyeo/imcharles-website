@@ -1,1 +1,1 @@
-export type TAppTheme = 'light' | 'dark' | 'system';
+export type TAppTheme = 'light' | 'dark';
