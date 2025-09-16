@@ -1,6 +1,4 @@
-'use client';
-
-import { IProfileSelectorProps } from '../types';
+import { IProfileSelectorProps } from '@/types/data/experiences/profile';
 
 const DesktopProfileSelector: FC<IProfileSelectorProps> = (props) => {
   const { company, jobTitle, range } = props;

@@ -1,4 +1,4 @@
-import { profiles } from '../data';
+import { profiles } from '@/data/experiences/profile';
 
 import DesktopProfileSelector from './profile-selector';
 
