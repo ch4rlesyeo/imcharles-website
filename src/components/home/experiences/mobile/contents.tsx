@@ -39,19 +39,30 @@ const ProfileContent: FC<IProfileSelectorProps> = (props) => {
             {company} ({rangeDetail})
           </div>
         </div>
-        {descriptions.map((description, index) => {
+        {descriptions.map(({ description, details }, index) => {
           return (
             <div
               key={index.toString()}
               className="text-xs"
               style={customStyles.description}
             >
-              {description}
+              <div>{description}</div>
+              <ul className="list-disc" style={{ paddingInlineStart: '2rem' }}>
+                {details?.map((detail, detailIndex) => {
+                  return (
+                    <li key={detailIndex.toString()} className="mt-2">
+                      {detail}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           );
         })}
       </div>
-      <DrawerFooter></DrawerFooter>
+      <DrawerFooter>
+        <div>Footer here</div>
+      </DrawerFooter>
     </DrawerContent>
   );
 };
